@@ -125,3 +125,13 @@ header::after
  .content{
  	background-color: white;
  }
+
+a:link{
+text-decoration: none;
+color: black;
+ }
+
+ a:hover{
+ 	text-decoration: underline;
+ 	color: blue;
+ }
