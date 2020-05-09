@@ -1,3 +1,4 @@
+'''java
 public class Ex1
 {
 	//Java basically only uses object oriented programming (will learn what this is later)//
@@ -60,3 +61,4 @@ public class Ex1
 
 	
 }
+'''
