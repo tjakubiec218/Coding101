@@ -20,6 +20,7 @@
  	font-size: 0.9em;
  	min-width: 25em;
         table-layout: fixed;
+        table-width: 100%;
  }
 
  .slidesHead {
