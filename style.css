@@ -18,7 +18,7 @@
  	margin-right: auto;
  	border-collpase: collapse;
  	font-size: 0.9em;
- 	min-width: 400px;
+ 	min-width: 25em;
  }
 
  .slidesHead {
@@ -112,6 +112,7 @@ header::after
  nav a:hover::before
  {
  	width: 100%;
+
  }
 
  .site-footer{
