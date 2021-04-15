@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Useful API's </title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="favicon_io/site.webmanifest">
+	<link rel = "stylesheet" href = "style.css"/>
+</head>
+<body>
+<header class = "site-header">
+	
+<h1> Coding 101 </h1>		
+</header>
+<header class = "main-header">
+<nav> 
+<ul>
+<li><a href = "index.html"> Home </a> </li>
+<li><a href = "codeExamples.html"> Code Examples </a> </li>
+<li><a href = "quizzes.html"> Quizzes </a> </li>
+<li><a href = "labs.html"> Try it Yourself </a> </li>
+<li><a href = "apis.html"> Useful API's </a> </li>
+</ul>	
+</nav>
+<script>
+function main()
+{
+	var id = event.srcElement.id;
+	var element = document.getElementById(id);
+	var idString = element.getAttribute('id');
+	var classString = element.getAttribute('class');
+	redirect(idString, classString);
+}
+function redirect(linkString, moduleString)
+{
+	var link = "https://docs.oracle.com/javase/8/docs/api/java/";
+	if(moduleString == "util")
+	{
+		link = link + moduleString + "/" + linkString + ".html";
+	}
+	else if(moduleString == "lang")
+	{
+		link = link + moduleString + "/" + linkString + ".html";
+	}
+	window.location = link;
+}
+</script>
+		<table class = "buttons">
+		<caption> Links to useful Java APIs </caption>
+		<thead>
+			<tr>
+				<th scope = "col"> API's of the package java.util.* </th>
+				<th scope = "col"> API's built in through java.lang </th>
+			</tr>
+		</thead>
+			<tr>
+				<td> <button onClick = "main()" id = "ArrayList" class = "util" > ArrayList </button> </td>
+				<td> <button onClick = "main()" id = "Math" class = "lang"> Math </button> </td>
+			</tr>
+			<tr>
+				<td> <button onClick = "main()" id = "LinkedList" class = "util" > LinkedList </button> </td>
+				<td> <button onClick = "main()" id = "String" class = "lang"> String </button> </td>
+			</tr>
+			<tr>
+				<td> <button onClick = "main()" id = "PriorityQueue" class = "util" > PriorityQueue </button> </td>
+				<td> <button onClick = "main()" id = "StringBuilder" class = "lang"> StringBuilder </button> </td>
+			</tr>
+			<tr>
+				<td> <button onClick = "main()" id = "Random" class = "util"> Random </button> </td>
+				<td> <button onClick = "main()" id = "Integer" class = "lang"> Integer </button> </td>
+			<tr>
+				<td> <button onClick = "main()" id = "HashSet" class = "util"> HashSet </button> </td>
+				<td> <button onClick = "main()" id = "Long" class = "lang"> Long </button> </td>
+			</tr>
+			<tr>
+				<td> <button onClick = "main()" id = "HashMap" class = "util"> HashMap </button> </td>
+				<td> <button onClick = "main()" id = "Double" class = "lang"> Double </button> </td>
+			</tr>
+			
+		</table>
+</header>
+</body>
+</html>
