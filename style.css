@@ -146,6 +146,7 @@ color: black;
 
 pre {
   overflow: auto;
+  white-space: pre-line;
 }
 pre > code {
   display: block;
