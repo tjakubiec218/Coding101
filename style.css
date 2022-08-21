@@ -148,11 +148,6 @@ pre {
   overflow: auto;
   white-space: pre-line;
 }
-pre > code {
-  display: block;
-  padding: 1rem;
-  word-wrap: normal;
-}
 
 button
 {
